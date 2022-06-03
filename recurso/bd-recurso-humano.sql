@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-05-2022 a las 19:38:36
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 8.0.8
+-- Tiempo de generación: 01-06-2022 a las 05:03:13
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: ` bd_recurso_humano`
+-- Base de datos: `bd-recurso-humano`
 --
+CREATE DATABASE IF NOT EXISTS `bd-recurso-humano` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bd-recurso-humano`;
 
 -- --------------------------------------------------------
 
@@ -38,9 +40,12 @@ CREATE TABLE `tb_persona` (
 --
 
 INSERT INTO `tb_persona` (`dui_persona`, `apellidos_persona`, `nombre_persona`) VALUES
-('23344523-4', 'Juan', 'Perez'),
-('45893846-0', 'Roxana', 'Aparicio'),
-('98475869-1', 'America', 'Lopez');
+('', '', ''),
+('11111-1', 'Gamez', 'Marcela'),
+('23344523-4', 'Perez', 'Juan'),
+('45893849-0', 'Aparicio', 'Roxana'),
+('98475869-1', 'Lopez', 'America'),
+('null', 'Hernandez', 'Graciela');
 
 --
 -- Índices para tablas volcadas
